@@ -14,7 +14,6 @@ export default function AboutFilm() {
     let res = await apiClient.get(
       `/movie/${id}?language=en-US&api_key=YOUR_API_KEY`
     );
-    // console.log(res.data);
     setAboutF(res.data);
   };
 
